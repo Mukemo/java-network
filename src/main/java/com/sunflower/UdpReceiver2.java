@@ -1,3 +1,5 @@
+package com.sunflower;
+
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 
@@ -9,7 +11,7 @@ public class UdpReceiver2 {
             while (true) {
                 ds.receive(dp);
                 for (byte b : dp.getData()) {
-                    System.out.print(Character.toString(b));
+//                    System.out.print(Character.toString(b);
                 }
                 System.out.println();
             }
